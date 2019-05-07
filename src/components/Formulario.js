@@ -13,11 +13,10 @@ class FormularioGasto extends Component {
 			nombreGasto: this.nombreGasto.current.value,
 			cantidadGasto: this.cantidadGasto.current.value
 		};
-		console.log(gasto);
 		// Agregarlo y enviarlo por props
 		this.props.agregarGasto(gasto);
 		// Resetear el formulario (opcional)
-		e.currentTarget.reset();
+    e.currentTarget.reset();
 	};
 
 	render() {
